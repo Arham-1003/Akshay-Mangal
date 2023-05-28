@@ -238,7 +238,6 @@ body {
   }
   
   .detail {
-    /* height: 116px; */
     width: 906px;
     font-family: "Source Sans Pro";
     font-size: 24px;
@@ -253,10 +252,11 @@ body {
   
 
   .contact6-home {
-    /* margin-left: 398px; */
+    width: 100%;
+    margin-left: 42px;
     display: flex;
-    /* align-items: flex-start; */
     justify-content: center;
+    flex-wrap: wrap;
     
   }
   .contact6-home a{
@@ -264,12 +264,15 @@ body {
   }
   .group-60 {
     background-color: rgba(51, 67, 217, 1);
-    margin-right: 46px;
+    margin-right: 50px;
     border-radius: 15px;
     padding: 6px 25px 6px 24px;
     box-shadow: 0 4px 20px 5px rgba(51, 67, 217, 0.2);
     display: flex;
     align-items: center;
+  }
+  .group-60:hover{
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0,50%);
   }
   .contact-two {
     font-family: "Source Sans Pro";
@@ -297,7 +300,7 @@ body {
     justify-content: space-between;
 }
 .cancel{
-    height: 49px;
+    height: 56px;
 }
 
 
@@ -326,11 +329,21 @@ body {
 @media(max-width:768px) {
   .flex-wrapper-one {
       padding-left: 50px;
+      padding: 69px 60px 84px 72px;
   }
-
+  .options select {
+    margin: 2.9px 30px;
+  }
   .img {
       width: 100%;
       height: auto;
+  }
+  .sub-heading {
+    font-size: 33px;
+  }
+  .year-head h1{
+    font-size: 25px;
+    color: rgb(28 27 27 / 63%);
   }
 
   .group-40 {
