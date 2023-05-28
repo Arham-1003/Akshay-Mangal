@@ -8,6 +8,7 @@
 
 :root {
     --custom: #37ff00;
+    --white: #ffff;
 }
 
 body {
@@ -16,12 +17,14 @@ body {
 }
 
 .timeline {
-    background-color: rgba(176, 175, 175, 1);
-    padding: 30px 0 120px 39px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  background-color: rgba(176, 175, 175, 1);
+  /* padding: 30px 0 120px 39px; */
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   .nav {
     padding: 0 71px 0 0;
     display: flex;
@@ -130,18 +133,24 @@ body {
     letter-spacing: 0.48px;
   }
   .flex-wrapper-one {
-    background-color: var(--white);
-    margin-left: 72px;
+    background-color:var(--white) ;
+    /* margin-left: 72px; */
     border-radius: 45px;
     padding: 69px 99px 84px 38px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 90%;
   }
   .flex-wrapper-two {
+    width: 100%;
     margin-bottom: 11px;
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+  }
+  .rightest{
+    display: flex;
   }
   .main-heading-1 {
     margin-top: 34px;
@@ -198,15 +207,21 @@ body {
     color: rgba(37, 37, 37, 1);
     text-align: center;
   }
-  .year {
-    background-color: var(--white);
-    margin-right: 43px;
+  .options select{
+    height: 49px;
+    width: 115px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 16px;
     border-radius: 15px;
-    padding: 9px 15px 9px 29px;
+    margin: 2.9px 45px;
+    
+    color: red;
+    border: 0.1px solid #d4d4d4;
+    cursor: pointer;
+  }
+  .options select:hover{
     box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(220, 220, 220, 1);
   }
   .num-2016-two {
     font-family: "Source Sans Pro";
@@ -225,10 +240,14 @@ body {
     background-color: var(--white);
     border-radius: 15px;
     padding: 16px 17px 17px 16px;
-    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.1);
+  
     display: flex;
     align-items: center;
+    cursor: pointer;
     border: 1px solid rgba(220, 220, 220, 1);
+  }
+  .cancel:hover{
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.1);
   }
   .sub-heading-photo {
     margin-bottom: 13px;
@@ -574,6 +593,9 @@ body {
     display: flex;
     align-items: flex-start;
   }
+  .contact6-home a{
+    text-decoration: none;
+  }
   .group-60 {
     background-color: rgba(51, 67, 217, 1);
     margin-right: 46px;
@@ -588,7 +610,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     line-height: normal;
-    color: var(--white);
+    color: white;
     text-align: center;
   }
   .group-61 {
