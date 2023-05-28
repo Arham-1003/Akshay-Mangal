@@ -1,0 +1,9 @@
+@media(max-width:978px){
+    .img{
+        width: 90%;
+        height: auto;
+    }
+    .detail{
+        width: auto;
+    }
+}
