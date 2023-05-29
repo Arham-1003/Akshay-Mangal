@@ -375,7 +375,6 @@ a {
 }
 
 .places-where-i-deliverd-speeches {
-    padding: 0 23px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +420,14 @@ a {
     text-align: center;
     margin-bottom: 1rem;
 }
-
+.topics{
+    padding: 29px 0;
+    margin: 0 138px;
+    border-radius: 17px;
+}
+.allcards{
+    margin:22px;
+}
 .relative-wrapper-one {
     margin: 3rem 0;
     position: relative;
@@ -479,20 +485,27 @@ a {
 }
 
 .my-journey {
-    margin-bottom: 272px;
-    margin-left: 55px;
+    max-height: 544px;
+    margin-top: 10px;
+    margin-bottom: 70px;
     padding: 122px 585px 0 66px;
     position: relative;
+    background-image: url("https://static.overlay-tech.com/assets/7de65718-677f-418d-9bb4-7fb30d21ef08.png");
 }
-
+.journeyphoto{
+    /* max-width: 1000px; */
+    display: flex;
+    justify-content: center;
+}
 .pexels-photo-by-laura-tancredi {
+    display: flex;
     width: 630px;
-    height: 1215px;
+    height: 618px;
     background-size: 100% 100%;
     background-position: center;
-    background: url("https://static.overlay-tech.com/assets/7de65718-677f-418d-9bb4-7fb30d21ef08.png"),
+    /* background: url("https://static.overlay-tech.com/assets/7de65718-677f-418d-9bb4-7fb30d21ef08.png"),
         url("https://static.overlay-tech.com/assets/5900408c-b615-475c-9fe6-262f4a74a23b.png"),
-        url("https://static.overlay-tech.com/assets/bac93c6e-335a-4841-9f5a-2af14b079b37.png");
+        url("https://static.overlay-tech.com/assets/bac93c6e-335a-4841-9f5a-2af14b079b37.png"); */
     position: relative;
 }
 
@@ -507,7 +520,6 @@ a {
     display: flex;
     position: absolute;
     right: 38px;
-    top: 325px;
     letter-spacing: 2.5px;
 }
 
@@ -519,7 +531,7 @@ a {
     align-items: flex-start;
     position: absolute;
     right: 85px;
-    top: 577px;
+    top: 415px;
     backdrop-filter: blur(93px);
 }
 
@@ -534,6 +546,7 @@ a {
     display: flex;
     position: relative;
     letter-spacing: 3.6px;
+    margin-bottom: 0px!important;
 }
 
 .text-24 {
@@ -567,8 +580,8 @@ a {
 }
 
 .ams-3-1 {
-    width: 869px;
-    height: 741px;
+    width: 808px;
+    height: 539px;
     position: absolute;
     left: 0;
     top: 0;
@@ -590,6 +603,7 @@ a {
 }
 
 .flex-wrapper-eight {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -670,7 +684,7 @@ a {
 }
 
 .flex-wrapper-fifteen {
-    margin-bottom: 52px;
+    /* margin-bottom: 52px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -702,20 +716,24 @@ a {
     line-height: normal;
     color: var(--black);
     text-align: center;
+    margin-top: 8px;
 }
 
 .num:not(:last-of-type) {
     margin-right: 112px;
 }
-
+.address{
+    margin-right: 280px;
+}
 .abc-com {
     font-family: "DM Sans";
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
     color: var(--black);
+    margin-top: 8px;
     text-align: center;
-    margin-right: 103px;
+    margin-right: 20px;
 }
 
 .theme {
