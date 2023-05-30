@@ -263,11 +263,7 @@ body {
     text-decoration: none;
   }
   .group-60 {
-    background-color: rgba(51, 67, 217, 1);
-    margin-right: 50px;
-    border-radius: 15px;
-    padding: 6px 25px 6px 24px;
-    box-shadow: 0 4px 20px 5px rgba(51, 67, 217, 0.2);
+    
     display: flex;
     align-items: center;
   }
@@ -393,13 +389,26 @@ body {
   }
   
 }
+.group-60 a{
+  background-color: rgba(51, 67, 217, 1);
+  margin-right: 50px;
+  border-radius: 15px;
+  margin: 10px 50px;
+  width: 200px;
+  padding:15px 35px;
+  box-shadow: 0 4px 20px 5px rgba(51, 67, 217, 0.2);
+}
 
-@media(max-width:450px){
+@media(max-width:550px){
   .contact6-home {
       flex-direction: column;
       justify-content: center;
+    }
+    .group-60{
+      justify-content: center;
   }
-  .group-60{
-      margin: 20px;
+  .group-60 a{
+    padding: 15px;
+    width: 150px;
   }
 }
