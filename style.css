@@ -19,14 +19,8 @@ a {
     color: black;
     text-decoration: none;
 }
-
-.desktop {
-    background-color: var(--white);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
+section {
+    padding-top: 6rem !important;
 }
 
 .why-factor-two {
@@ -490,16 +484,15 @@ a {
 }
 
 .my-journey {
-    margin: auto;
-    margin-bottom: 10px;
+    width: 80%;
     border-radius: 70px;
     background-image: url(https://static.overlay-tech.com/assets/7de65718-677f-418d-9bb4-7fb30d21ef08.png);
 }
 .journey-set{
     flex-direction: column;
     display: flex;
-    height: 100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 .journeyphoto{
     /* max-width: 1000px; */
@@ -507,22 +500,15 @@ a {
     justify-content: center;
 }
 .pexels-photo-by-laura-tancredi {
-    display: flex;
-    height: 618px;
-    background-size: 100% 100%;
     background-position: center;
     position: relative;
 }
 
 .text-22-two {
-    height: 82px;
-    width: 483px;
     font-family: "DM Sans";
     font-size: 50px;
     font-weight: 500;
-    line-height: normal;
-    color: var(--black);
-    display: flex;
+    margin: 1rem;
     letter-spacing: 2.5px;
 }
 
@@ -530,34 +516,45 @@ a {
     border-radius: 70px;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
     display: flex;
-    align-items: flex-start;
+    padding: 2rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
     backdrop-filter: blur(93px);
 }
 .flex-wrapper-journey{
     padding: 25px 15px;
     border-radius: 70px;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: flex-start;
     backdrop-filter: blur(93px);
-}
-
-.flex-wrapper-three a{
-    z-index: 99999;
-    width: 21rem;
     font-family: "DM Sans";
     font-size: 30px;
     font-weight: 500;
 }
 
 .ams-3-1 {
-    width: 808px;
-    height: 539px;
+    width: 45%;
+}
+
+@media (max-width: 767px) {
+    .my-journey{
+        width: 90%;
+    }
+    .ams-3-1 {
+        width: 100%;
+    }
+    .text-22-two{
+        font-size: 1.5rem;
+    }
+    .flex-wrapper-journey{
+        font-size: 1.4rem;
+    }
 }
 
 .social-profile {
     display: flex;
     flex-direction: column;
+    padding: 4rem 0;
 }
 
 .text-26 {
@@ -589,7 +586,6 @@ a {
 }
 
 .contact-details {
-    padding: 106px 0 0;
     display: flex;
     width: 100%;
 }
@@ -693,48 +689,25 @@ a {
     flex-wrap: wrap;
 }
 
-.flex-wrapper-sixteen p{
-    display: flex;
-    align-items: center;
-    margin: 0 30px!important;
-}
-.flex-wrapper-sixteen svg{
-    fill: white;
-    stroke: black;
+.flex-wrapper-sixteen i{
+    padding-left: 2rem;
+    font-size: 2rem;
+    padding-right: 1rem;
 }
 
-.num {
+.flex-wrapper-sixteen p {
     font-family: "DM Sans";
     font-size: 20px;
     font-weight: 500;
-    line-height: normal;
-    color: var(--black);
-    text-align: center;
-    margin-top: 8px;
 }
 
-.num:not(:last-of-type) {
-    margin-right: 112px;
-}
-.address{
-    margin-right: 280px;
-}
-.abc-com {
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    color: var(--black);
-    margin-top: 8px;
-    text-align: center;
-    margin-right: 20px;
-}
 
 .theme {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding: 3rem 0;
     background-color: #012234;
 }
 
@@ -797,7 +770,7 @@ a {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .text-39 {
@@ -938,7 +911,7 @@ a {
     justify-content: space-between;
 }
 .fix-nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
